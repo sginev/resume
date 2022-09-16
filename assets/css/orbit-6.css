@@ -8,15 +8,20 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #545E6C;
+  font-family: "Roboto", sans-serif;
+  color: #545e6c;
   background: #f5f5f5;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
@@ -42,7 +47,7 @@ p {
 }
 
 .wrapper {
-  background: #4B6A78;
+  background: #4b6a78;
   max-width: 960px;
   margin: 0 auto;
   margin-top: 30px;
@@ -59,7 +64,7 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #4B6A78;
+  background: #4b6a78;
   position: absolute;
   right: 0;
   width: 240px;
@@ -241,7 +246,7 @@ p {
 }
 
 .main-wrapper .job-title {
-  color: #3F4650;
+  color: #3f4650;
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
@@ -252,12 +257,12 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
+  color: #97aac3;
 }
 
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color: #97aac3;
 }
 
 .main-wrapper .project-title {
@@ -310,7 +315,7 @@ p {
 
 .footer .copyright {
   line-height: 1.6;
-  color: #545E6C;
+  color: #545e6c;
   font-size: 13px;
 }
 
@@ -342,5 +347,53 @@ p {
     float: left;
     width: 30%;
     margin-bottom: 0;
+  }
+}
+
+@media not print {
+  .section-title.--hidden {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  .section-title.--hidden .icon-holder {
+    opacity: 0;
+    transform: scale(0%);
+  }
+  .job-title.--hidden {
+    opacity: 0;
+    /* filter: blur(0 5px); */
+    transform: translateX(-10px);
+  }
+  .item p.--hidden {
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(10px);
+  }
+
+  .item p.--show,
+  .job-title.--show {
+    opacity: 100%;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+  .section-title.--show .icon-holder {
+    opacity: 100%;
+    transform: scale(100%);
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition-delay: 400ms;
+  }
+  .section-title.--show {
+    opacity: 100%;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 600ms;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .--hidden {
+    transition: none;
   }
 }
