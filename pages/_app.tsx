@@ -1,7 +1,4 @@
-// import '@/styles/globals.css'
-// import '@/styles/orbit-6.css';
-// import '@/styles/bootstrap.min.css';
-import '@/styles/bulk.css';
+import '@/styles/index.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
