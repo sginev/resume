@@ -5,8 +5,9 @@ import { faEnvelope, faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import AvatarImage from '../../public/profile-picture.webp';
+import { LoadedContent } from '../utils/loadPageContent';
 
-export function TheSidebar() {
+export function TheSidebar(props: LoadedContent) {
   return (
     <div className='sidebar-wrapper'>
       <div className='profile-container'>

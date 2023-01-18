@@ -262,7 +262,7 @@ p {
   -webkit-border-radius: 50%;
 }
 .sidebar-wrapper {
-  background: #4b6a78;
+  background: #2e3f4d;
   position: absolute;
   right: 0;
   width: 240px;
@@ -494,6 +494,11 @@ p {
     filter: blur(0);
     transform: translateX(0);
     transition: all 600ms;
+  }
+
+  .wrapper {
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
 @media (prefers-reduced-motion) {
