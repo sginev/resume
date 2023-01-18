@@ -4,11 +4,8 @@ time: 2020-2021
 role: Game Developer Lead
 ---
 
-Joined work on a multi-layered online games project; The front end was developed in TypeScript with a WebGL render engine. The back end was mainly completed in C# and .NET; PostgreSQL is used for all databases.
+Joined team working on a multi-layered online gaming projects. The front-ends are developed in TypeScript with WebGL rendering engine. Back-end are mainly written in C#/.NET.
 
-Introduced changes to the build procedure of existing web apps to reduce the final size of scripts and assets and shorten user load-time.
+Assisted the team in updating the current development flow and iIntroduced new build procedures for existing web apps to optimize reduce the final size of scripts, images and sound assets, shortening end-users' load-time
 
-Assisted the team in updating the current development flow with modern tools, including Webpack and Terser Minifier.
-
-Led the development of games and core SDKs packaged as a single TypeScript monorepo. The front end is rendered with PixiJS 5, a WebGL render engine, and communicates with the back end over custom API.
-
+Developed a new game engine for the company's new game, which is a 3D slot machine game. The engine is written in TypeScript and uses PixiJS for rendering. It is designed to be highly modular and extensible, allowing the game to be easily customized for different providers.
