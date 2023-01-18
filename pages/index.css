@@ -430,8 +430,14 @@ p {
   margin-bottom: 15px;
 }
 .footer {
+  margin: 30px;
   padding: 30px;
-  padding-top: 60px;
+  opacity: 0.33;
+  transition: opacity 2s ease;
+}
+.footer:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 .footer .copyright {
   line-height: 1.6;
