@@ -1,8 +1,12 @@
 ---
 title: Blockchain Solutions, Varna
-time: 2018-2020
+time: 2018 - 2020
 role: Software Engineer
+priority: 99
+position: 3
+logo: /xp-logos/blockchainsolutions.avif
 ---
-Here I learned to write data scrapers on python, communicate with more types of databases, use message queues and to properly dockerize my projects and environments.
 
-I also worked with a few javascript mini-games as part of one of our projects, though more in terms of encrypting, obfuscating and faking the communication between them and the backend.
+Learned to write data scrapers on python, communicating with several database solutions, using message queues and to properly dockerizing my projects and environments.
+
+Handled encryption and obfuscation of data in communication between javascript games and the backend.

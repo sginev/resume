@@ -1,0 +1,273 @@
+@import "./variables"
+
+$color-accent: #BA9432
+$color-dark: #393939
+
+$story-padding: 80px
+$sidebar-width: 256px
+
+::selection
+  background-color: rgba($color-accent, $alpha: .4)
+
+.desk
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 240px
+  @media screen and (min-width: $w-sheet)
+    padding-top: 36px
+  transition: padding 250ms
+  
+.sheet
+  background-color: white
+  width: 100%
+  max-width: 960px
+  min-height: 1680px  
+  position: relative
+  @media screen and (min-width: $w-sheet)
+    -webkit-box-shadow: 0px 2px 140px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 0px 2px 140px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 2px 140px rgba(0, 0, 0, 0.2)
+
+  font-family: Lato
+  cursor: default
+
+  overflow: hidden
+
+  outline: #0002 solid 1px
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+    box-shadow: inset 0 0 200px #0004
+    pointer-events: none
+
+  .top-detail
+    background: $color-dark
+    width: 100%
+    height: 20px
+
+.content
+  display:block
+
+  .header
+    height: 280px
+    padding: 80px $sidebar-width
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    @media screen and (max-width: $w-sheet)
+      align-items: flex-end
+    &>div
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      align-items: center
+      max-width: 360px
+      overflow: visible
+      position: relative
+      @media screen and (max-width: $w-sheet)
+        max-width: none  
+    h1
+      color: $color-dark
+      white-space: pre
+      font-size: 52px
+      letter-spacing: .15em
+    h3
+      color: $color-accent
+      font-size: 24px
+      position: absolute
+      right: 10px
+      top: 70px
+  
+  .story
+    padding-top: 20px
+    padding-left: $story-padding
+    padding-right: $sidebar-width + $story-padding
+    padding-bottom: 240px
+
+    p
+      margin-bottom: 1em
+
+    h1
+      background: $color-dark
+      color: white
+      font-weight: bold
+      font-size: 1.2em
+      text-transform: uppercase
+      display: inline-block
+      position: relative
+      margin-bottom: 20px
+      padding: .1em 0
+      padding-right: 2em
+      transition: padding-right .25s
+      &:before
+        content: ''
+        position: absolute
+        top: 0px
+        left: -$story-padding
+        bottom: 0px
+        width: $story-padding
+        background: $color-dark
+      &:after 
+        $w: 8px
+        content: ''
+        position: absolute
+        top: 0px
+        right: -$w
+        bottom: 0px
+        border-right: $w solid $color-accent
+    .section:hover h1
+      padding-right: 2.25em
+
+    .spacer
+      height: $story-padding
+    .item-spacer
+      height: 40px
+
+    h3
+      font-weight: bolder
+      margin-bottom: 10px
+
+    .item .details
+      max-height: 0em
+      transition: 250ms max-height ease-in-out
+      overflow: hidden
+      a, p
+        font-size: 13px
+    .item .details[active]
+      max-height: 10em
+
+    .xp-header
+      position: relative
+      height: 100px
+      .logo
+        filter: saturate(0%)
+        opacity: .6
+        position: absolute
+        right: 0
+        width: 100%
+        height: 50px
+        transition: 300ms opacity, 100ms height
+        @media screen and (max-width: $w-sheet)
+          height: 3.5vw
+        img
+          object-fit: contain !important
+          object-position: right top !important
+      .job-title
+        font-size: small
+        opacity: .7
+        transition: 300ms opacity
+      .time
+        font-size: 11px
+        opacity: .3
+        transition: 300ms opacity
+    .item:hover .xp-header 
+      .logo
+        opacity: .7
+      .job-title
+        opacity: .8
+      .time
+        opacity: .5
+
+.sidebar
+  background: $color-dark
+  position: absolute
+  top: 20px
+  right: 0px
+  width: $sidebar-width
+  height: 100%
+  color: #fff
+  margin-bottom: 20px
+
+  display: flex
+  flex-direction: column
+
+  .profile
+    &:after
+      content: ''
+      position: absolute
+      background-image: linear-gradient(#0000, #0000, #0000, $color-dark)
+      top: 0px
+      left: 0px
+      right: 0px
+      bottom: 0px
+
+  a
+    color: #FFFD
+    border-bottom: solid #FFF0 1px
+    transition-property: border-color, color
+    transition-duration: 250ms
+  a:hover
+    color: #FFFF
+    border-bottom: solid white 1px
+
+  .group
+    padding: 24px
+    h2
+      font-weight: bolder
+      text-transform: uppercase
+      line-height: 3em
+    li
+      display: flex
+      flex-direction: row
+      align-items: center
+      line-height: 2em
+
+    .flag svg
+      width: 1em
+      height: 100%
+      display: inline
+      margin-right: .5em
+      fill: white
+    svg.svg-inline--fa
+      height: 1.0em
+      width: 1.0em
+      margin-right: .5em
+      transition-property: fill, color
+    a
+      border-bottom: solid #FFF0 1px
+      transition-property: border-color, color
+      line-height: 2em
+    a,
+    svg
+      color: inherit
+      transition-duration: 300ms
+    li.link:hover
+      color: $color-accent
+      a,
+      svg
+        transition-duration: 250ms
+    li.link:hover svg
+      fill: $color-accent
+
+    .lang-desc
+      opacity: .0
+      font-size: .75em
+      transition-property: opacity, color
+      transition-duration: 250ms
+      margin-left: .25em
+      color: white
+    a:hover .lang-desc
+      opacity: .8
+      color: white
+      color: $color-accent
+
+  &:after 
+    //content: ''
+    position: absolute
+    top: 0px
+    right: -12px
+    bottom: 0px
+    border-right: 12px solid $color-accent
+
+.desk:before
+  background-color: #cfcfcf
+  
+
+

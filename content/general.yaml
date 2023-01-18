@@ -1,0 +1,113 @@
+---
+firstName: Stefan
+lastName: Ginev
+professionalTitle: Software Engineer
+profilePicture: /images/profile.jpg
+introduction: |
+  My programming career over the last 11 years has often had me switching between wildly different sets of techonologies battling a vast variety of tasks and projects. Combined with my split developer-personality, this has formed me into someone highly adaptable to new frameworks, tool-sets and languages, while delivering professional quality.
+
+  By day I am a full-stack developer, leaning mostly toward React, Node.js and MongoDB, with basic competence in DevOps and continuous delivery. By night I am a game developer, utilizing either Unity, or this same stack, combined with various WebGL libraries.
+
+  I'm immensely passionate about interesing and innovative ideas from both of my worlds, and I am always excited to learn something new. I'm particularly strict about good UX, so I take care to provide beauty and performance along with functionality in my work.
+projectsPrologue: |
+  I have worked on a number of projects both at the office, and at home. These include games and apps, realized via different technologies for web, android and flash (when it was cool). I handle mostly front-end business and visual logic; my back-end work consists predominantly of multiplayer server logic, and simple rest api and websites.
+miscellaneous: |
+  Whether as personal projects or to assist my workflow at the office, I've also familiarized myself over the years with several online and self hosted cloud IDEs, such as Gitpod, CodeServer (vscode in the browser) and Cloud9 (when that was cool) and I've learned the basics of CI (vsonline/azure, Cirrus, Bitbucket's own, etc)
+
+  Ocassionally I work on some home-automation/IOT projects, utilizing a box of pies at home and the best and cheapest Aliexpress has to offer in terms of gadgets, switches, etc.
+languages: |
+  <p>
+    <a href="https://certs.duolingo.com/qbgyunmd" target="_blank" rel="noopener noreferrer">
+      English
+      <span>&nbsp;</span>
+      <span class="lang-desc">(Duolingo Cert)</span>
+    </a>
+  </p>
+education: |
+  <h4 class="degree">Computer Science</h4>
+  <h5 class="meta">TU Varna</h5>
+  <div class="time">2007 - 2011</div>
+contactDetails:
+  [
+    {
+      'visible': true,
+      'typelabel': 'Email',
+      'label': 'choephix@gmail.com',
+      'href': 'mailto:choephix@gmail.com',
+      'faIcon': 'fas fa-envelope',
+    },
+    {
+      'visible': true,
+      'typelabel': 'Phone',
+      'label': '+359 886 791-663',
+      'href': 'tel:+359 886 791-663',
+      'faIcon': 'fas fa-phone',
+    },
+    {
+      'visible': true,
+      'typelabel': 'Viber',
+      'label': '+359 886 791-663',
+      'href': 'viber://chat/?number=+359 886 791-663',
+      'faIcon': 'fab fa-viber',
+    },
+    {
+      'visible': false,
+      'typelabel': 'Skype',
+      'label': 'choephix',
+      'href': 'skype:skype',
+      'faIcon': 'fab fa-skype',
+    },
+    {
+      'visible': true,
+      'typelabel': 'Portfolio Link',
+      'label': 'sginev.github.io/portfolio',
+      'href': 'sginev.github.io/portfolio',
+      'faIcon': 'fas fa-globe',
+    },
+    {
+      'visible': false,
+      'typelabel': 'Demos',
+      'label': 'project demos',
+      'href': 'https://stefanginev.dev',
+      'faIcon': 'fas fa-star',
+    },
+    {
+      'visible': true,
+      'typelabel': 'Github',
+      'label': 'github.com/sginev',
+      'href': 'https://github.com/sginev',
+      'faIcon': 'fab fa-github',
+    },
+    {
+      'visible': false,
+      'typelabel': 'GIthub',
+      'label': 'github.com/choephix',
+      'href': 'https://github.com/choephix',
+      'faIcon': 'fab fa-github',
+    },
+    {
+      'visible': true,
+      'typelabel': 'Linkedin',
+      'label': 'linkedin.com/choephix',
+      'href': 'https://linkedin.com/choephix',
+      'faIcon': 'fab fa-linkedin',
+    },
+    {
+      'visible': false,
+      'typelabel': 'Twitter',
+      'label': '@choephix',
+      'href': 'https://twitter.com/choephix',
+      'faIcon': 'fab fa-twitter',
+    },
+    {
+      'visible': false,
+      'typelabel': 'Facebook',
+      'label': 'facebook.com/choephix',
+      'href': 'https://facebook.com/choephix',
+      'faIcon': 'fab fa-facebook',
+    },
+  ]
+copyright:
+  - powered by Gatsby Cloud and DatoCMS
+---
+

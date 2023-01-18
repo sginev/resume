@@ -24,4 +24,6 @@ technologies:
   - Adobe Photoshop
   - Docker
   - Java
+copyright:
+  - powered by Gatsby Cloud and DatoCMS
 ---
