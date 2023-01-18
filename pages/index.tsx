@@ -5,10 +5,6 @@ import { TheFooter } from '../components/TheFooter';
 import { TheMain } from '../components/TheMain';
 import { TheSidebar } from '../components/TheSidebar';
 
-// import { Roboto } from '@next/font/google';
-// const fontRoboto = Roboto({ weight: ['400', '500', '700', '900'], subsets: ['latin-ext'] });
-// const fontNewRocker = New_Rocker({ weight: ['400'] });
-
 type IndexProps = Awaited<ReturnType<typeof getStaticProps>>['props'];
 
 export default function Index(props: IndexProps) {
