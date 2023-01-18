@@ -7,7 +7,7 @@ export function TheFooter() {
       <div className='text-center'>
         <small className='copyright'>
           Site template designed with <FontAwesomeIcon icon={faHeart} /> by
-          <a href='http://themes.3rdwavemedia.com' target='_blank'>
+          <a href='http://themes.3rdwavemedia.com' target='_blank' rel='noreferrer'>
             {' Xiaoying Riley '}
           </a>
           for developers
@@ -16,3 +16,5 @@ export function TheFooter() {
     </footer>
   );
 }
+
+export default TheFooter;

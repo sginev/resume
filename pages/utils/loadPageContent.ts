@@ -28,3 +28,5 @@ function loadFilesFromDirectory(dirpath: string) {
   const filenames = fs.readdirSync(dirpath, 'utf-8');
   return filenames.map(filename => loadSingleFile(`${dirpath}/${filename}`));
 }
+
+export default loadPageContent;

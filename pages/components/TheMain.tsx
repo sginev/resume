@@ -78,3 +78,5 @@ export function TheMain(props: LoadedContent) {
     </div>
   );
 }
+
+export default TheMain;

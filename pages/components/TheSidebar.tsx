@@ -37,7 +37,7 @@ export function TheSidebar(props: LoadedContent) {
           </li>
           <li className='website'>
             <FontAwesomeIcon icon={faGlobe} />
-            <a href='https://sginev.github.io/portfolio' target='_blank'>
+            <a href='https://sginev.github.io/portfolio' target='_blank' rel='noreferrer'>
               sginev.github.io/portfolio
             </a>
           </li>
@@ -72,3 +72,5 @@ export function TheSidebar(props: LoadedContent) {
     </div>
   );
 }
+
+export default TheSidebar;
