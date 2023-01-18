@@ -56,18 +56,9 @@ export function TheSidebar(props: LoadedContent) {
       <div className='interests-container container-block'>
         <h2 className='container-block-title'>Technologies</h2>
         <ul className='list-unstyled interests-list'>
-          <li>Unity3D</li>
-          <li>Node.js / Express.js</li>
-          <li>Three.js (3D engine)</li>
-          <li>Phaser</li>
-          <li>C# .NET</li>
-          <li>Python</li>
-          <li>Typescript</li>
-          <li>React, Angular, CSS3</li>
-          <li>Google Firebase</li>
-          <li>Adobe Photoshop</li>
-          <li>Docker</li>
-          <li>Java</li>
+          {props.home.frontmatter.technologies?.map((label: string, index: number) => (
+            <li key={index}>{label}</li>
+          ))}
         </ul>
       </div>
       <div className='education-container container-block'>

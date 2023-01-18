@@ -11,4 +11,17 @@ miscellaneous: |
   Whether as personal projects or to assist my workflow at the office, I've also familiarized myself over the years with several online and self hosted cloud IDEs, such as Gitpod, CodeServer (vscode in the browser) and Cloud9 (when that was cool) and I've learned the basics of CI (vsonline/azure, Cirrus, Bitbucket's own, etc)
 
   Ocassionally I work on some home-automation/IOT projects, utilizing a box of pies at home and the best and cheapest Aliexpress has to offer in terms of gadgets, switches, etc.
+technologies:
+  - Unity3D
+  - Node.js / Express.js
+  - Three.js (3D engine)
+  - Phaser
+  - C# .NET
+  - Python
+  - Typescript
+  - React, Angular, CSS3
+  - Google Firebase
+  - Adobe Photoshop
+  - Docker
+  - Java
 ---
