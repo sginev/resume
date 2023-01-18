@@ -1,9 +1,0 @@
-tasks:
-  - name: SERVE
-    init: npm i -g serve
-    command: serve .
-    openIn: right
-    openMode: tab-before
-ports:
-  - port: 3000
-    onOpen: open-browser
