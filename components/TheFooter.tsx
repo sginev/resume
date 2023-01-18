@@ -1,16 +1,22 @@
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function TheFooter() {
   return (
     <footer className='footer'>
       <div className='text-center'>
         <small className='copyright'>
-          Site template designed with <FontAwesomeIcon icon={faHeart} /> by
+          Template designed with <FontAwesomeIcon icon={faHeart} /> by
           <a href='http://themes.3rdwavemedia.com' target='_blank' rel='noreferrer'>
             {' Xiaoying Riley '}
           </a>
           for developers
+        </small>
+      </div>
+      <div className='text-center'>
+        <small className='copyright'>
+          This website is built with <a href='https://nextjs.org/'>{' Next.js 13 '}</a> and
+          <a href='https://tina.io'>{' TinaCMS '}</a>
         </small>
       </div>
     </footer>
