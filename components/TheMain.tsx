@@ -57,7 +57,7 @@ export function TheMain(props: LoadedContent) {
                   <h3 className='job-title'>{frontmatter.title}</h3>
                   <div className='time'>{frontmatter.time}</div>
                 </div>
-                <div className='company'>{frontmatter.position}</div>
+                <div className='company'>{frontmatter.role}</div>
               </div>
               <div className='details'>
                 <ReactMarkdown>{content}</ReactMarkdown>

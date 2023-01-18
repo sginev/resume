@@ -49,6 +49,7 @@ async function loadPageContent() {
     home: loadSingleFile(contentPaths.home),
     projects: loadFilesFromDirectory(contentPaths.projects),
     experience: loadFilesFromDirectory(contentPaths.experience),
+    pageTitle: 'Stefan Ginev — CV',
   };
 }
 
@@ -62,4 +63,3 @@ function loadFilesFromDirectory(dirpath: string) {
   const filenames = fs.readdirSync(dirpath, 'utf-8');
   return filenames.map(filename => loadSingleFile(`${dirpath}/${filename}`));
 }
-

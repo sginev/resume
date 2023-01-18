@@ -1,7 +1,7 @@
 ---
 title: Blockchain Solutions, Varna
 time: 2018-2020
-position: Software Engineer
+role: Software Engineer
 ---
 Here I learned to write data scrapers on python, communicate with more types of databases, use message queues and to properly dockerize my projects and environments.
 

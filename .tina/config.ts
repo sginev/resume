@@ -56,15 +56,20 @@ export default defineConfig({
         fields: [
           {
             type: 'string',
-            name: 'abstract',
-            label: 'Abstract Title',
+            name: 'title',
+            label: 'Title',
             isTitle: true,
             required: true,
           },
           {
             type: 'string',
-            name: 'title',
-            label: 'Title',
+            name: 'time',
+            label: 'Dates',
+          },
+          {
+            type: 'string',
+            name: 'role',
+            label: 'Role',
           },
           {
             type: 'rich-text',
