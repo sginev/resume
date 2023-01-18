@@ -294,6 +294,9 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  border: #fff 4px solid;
+  border: #fff2 4px solid;
+  box-sizing: content-box;
 }
 .sidebar-wrapper .contact-list .svg-inline--fa {
   margin-right: 5px;
