@@ -4,7 +4,7 @@ import { faViber } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import AvatarImage from '../../public/profile-picture.webp';
+import AvatarImage from '../public/profile-picture.webp';
 import { LoadedContent } from '../utils/loadPageContent';
 
 export function TheSidebar(props: LoadedContent) {
