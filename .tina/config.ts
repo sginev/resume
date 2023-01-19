@@ -99,13 +99,10 @@ export default defineConfig({
             fields: [
               {
                 type: 'string',
-                name: 'id',
-                label: 'ID',
-              },
-              {
-                type: 'string',
                 name: 'label',
                 label: 'Label',
+                isTitle: true,
+                required: true,
               },
               {
                 type: 'string',
@@ -116,6 +113,7 @@ export default defineConfig({
                 type: 'string',
                 name: 'url',
                 label: 'URL',
+                required: true,
               },
             ],
             list: true,
