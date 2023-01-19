@@ -3,7 +3,7 @@ import loadPageContent from '@/utils/loadPageContent';
 import Head from 'next/head';
 
 import { Lato } from '@next/font/google';
-const fontLato = Lato({ weight: ['400', '700', '900'] });
+const fontLato = Lato({ weight: ['400', '700', '900'], subsets: ['latin'] });
 
 type IndexProps = Awaited<ReturnType<typeof getStaticProps>>['props'];
 
