@@ -1,10 +1,10 @@
 ---
-title: Casualino & 7Mojos, Varna
+title: 'Casualino & 7Mojos, Varna'
 time: 2020 - 2021
 role: Game Developer Lead
 priority: 100
 position: 1
-logo: /xp-logos/casualino.avif
+logo: /uploads/casualino.avif
 ---
 
 Joined team working on a multi-layered online gaming projects. The front-ends are developed in TypeScript with WebGL rendering engine. Back-end are mainly written in C#/.NET.
