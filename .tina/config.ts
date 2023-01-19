@@ -13,13 +13,32 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: '',
+      mediaRoot: 'uploads',
       publicFolder: 'public',
     },
   },
   schema: {
     collections: [
       {
+        // e.g.
+        // ---
+        // title: 'CCG Prototype'
+        // abstract: 'Virtual Collectible Card Game'
+        // priority: 5
+        // position: 1
+        // tags:
+        //   - game
+        //   - editor
+        //   - prototype
+        // links:
+        //   - id: '4878326'
+        //     label: Administration and content management tool
+        //     linkType: demo
+        //     url: https://ccgw-editor.stefanginev.dev/
+        // seoTitle: virtual-collectible-card-game
+        // seoTags:
+        // ---
+        // A multiplayer game, built as a single-page web app.
         name: 'project',
         label: 'Projects',
         path: 'content/projects',
@@ -38,6 +57,86 @@ export default defineConfig({
             label: 'Title',
           },
           {
+            type: 'number',
+            name: 'priority',
+            label: 'Priority',
+          },
+          {
+            type: 'number',
+            name: 'position',
+            label: 'Position',
+          },
+          {
+            type: 'string',
+            name: 'tags',
+            label: 'Tags',
+            list: true,
+          },
+          {
+            type: 'image',
+            name: 'preview',
+            label: 'Preview',
+          },
+          {
+            type: 'image',
+            name: 'logo',
+            label: 'Logo',
+          },
+          {
+            type: 'image',
+            name: 'background',
+            label: 'Background',
+          },
+          {
+            type: 'image',
+            name: 'thumbnail',
+            label: 'Thumbnail',
+          },
+          {
+            type: 'object',
+            name: 'links',
+            label: 'Links',
+            templates: [
+              {
+                fields: [
+                  {
+                    type: 'string',
+                    name: 'id',
+                    label: 'ID',
+                  },
+                  {
+                    type: 'string',
+                    name: 'label',
+                    label: 'Label',
+                  },
+                  {
+                    type: 'string',
+                    name: 'linkType',
+                    label: 'Link Type',
+                  },
+                  {
+                    type: 'string',
+                    name: 'url',
+                    label: 'URL',
+                  },
+                ],
+                label: 'Link',
+                name: 'link',
+              },
+            ],
+          },
+          {
+            type: 'string',
+            name: 'seoTitle',
+            label: 'SEO Title',
+          },
+          {
+            type: 'string',
+            name: 'seoTags',
+            label: 'SEO Tags',
+            list: true,
+          },
+          {
             type: 'rich-text',
             name: 'body',
             label: 'Body',
@@ -49,6 +148,16 @@ export default defineConfig({
         },
       },
       {
+        // e.g.
+        // ---
+        // title: Casualino & 7Mojos, Varna
+        // time: 2020 - 2021
+        // role: Game Developer Lead
+        // priority: 100
+        // position: 1
+        // logo: /xp-logos/casualino.avif
+        // ---
+        // # Casualino & 7Mojos, Varna
         name: 'experience',
         label: 'Experience',
         path: 'content/experience',
@@ -70,6 +179,21 @@ export default defineConfig({
             type: 'string',
             name: 'role',
             label: 'Role',
+          },
+          {
+            type: 'number',
+            name: 'priority',
+            label: 'Priority',
+          },
+          {
+            type: 'number',
+            name: 'position',
+            label: 'Position',
+          },
+          {
+            type: 'image',
+            name: 'logo',
+            label: 'Logo',
           },
           {
             type: 'rich-text',
