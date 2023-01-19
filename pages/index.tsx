@@ -2,6 +2,9 @@ import { ResumeSheet } from '@/components/ResumeSheet';
 import loadPageContent from '@/utils/loadPageContent';
 import Head from 'next/head';
 
+import { Lato } from '@next/font/google';
+const fontLato = Lato({ weight: ['400', '700', '900'] });
+
 type IndexProps = Awaited<ReturnType<typeof getStaticProps>>['props'];
 
 export default function Index(data: IndexProps) {
@@ -13,7 +16,7 @@ export default function Index(data: IndexProps) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='desk'>
+      <div className={'desk ' + fontLato.className}>
         <ResumeSheet {...data} />
         <footer className='footer'>
           <div className='text-center'>
