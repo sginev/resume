@@ -61,7 +61,13 @@ const StorySections = {
           <ItemSpacer />
           <div className='xp-header'>
             <div className='logo'>
-              <Image className='logo' width={200} src={node.frontmatter.logo} alt={node.frontmatter.title + ' logo'} />
+              <img
+                className='logo'
+                width={200}
+                height="auto"
+                src={node.frontmatter.logo}
+                alt={node.frontmatter.title + ' logo'}
+              />
             </div>
             <h3 className='company'>{node.frontmatter.title}</h3>
             <div className='job-title'>{node.frontmatter.role}</div>
@@ -77,7 +83,7 @@ const StorySections = {
     <StorySection title='Miscellaneous'>
       <ItemSpacer />
       <div className='item'>
-        <div className='text' dangerouslySetInnerHTML={{ __html: data.general.miscellaneous }} />
+        <ReactMarkdown className='text'>{data.general.miscellaneous}</ReactMarkdown>
       </div>
     </StorySection>
   ),
