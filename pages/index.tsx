@@ -2,10 +2,6 @@ import { ResumeSheet } from '@/components/ResumeSheet';
 import loadPageContent from '@/utils/loadPageContent';
 import Head from 'next/head';
 
-import { TheFooter } from '../components/TheFooter';
-import { TheMain } from '../components/TheMain';
-import { TheSidebar } from '../components/TheSidebar';
-
 type IndexProps = Awaited<ReturnType<typeof getStaticProps>>['props'];
 
 export default function Index(data: IndexProps) {
