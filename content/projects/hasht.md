@@ -1,21 +1,20 @@
 ---
-title: 'Hasht'
-abstract: '8-Ball Pool Mobile Game'
+title: Hasht
+abstract: 8-Ball Pool Mobile Game
 priority: 5
 position: 1
 tags:
   - game
   - mobile
 links:
-  - id: '4938068'
-    label: View on App Store
+  - label: View on App Store
     linkType: demo
-    url: https://apps.apple.com/us/app/hasht/id1314853116
-  - id: '4938062'
-    label: View on Google Play Store
+    url: 'https://apps.apple.com/us/app/hasht/id1314853116'
+  - label: View on Google Play Store
     linkType: landing
-    url: https://play.google.com/store/apps/details?id=air.hasht.game
-seoTags:
+    url: 'https://play.google.com/store/apps/details?id=air.hasht.game'
+seoTags: null
+seoTitle: 8ball-stars-hasht-mobile-game
 ---
 
 Mobile game for iOS and Android. Play 8-Ball pool with friends and strangers.
