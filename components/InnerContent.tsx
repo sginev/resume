@@ -1,6 +1,6 @@
 import { LoadedContent } from '@/utils/loadPageContent';
+import Image from 'next/image';
 import { PropsWithChildren } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 const Spacer = () => <div className='spacer' />;
@@ -61,7 +61,7 @@ const StorySections = {
           <ItemSpacer />
           <div className='xp-header'>
             <div className='logo'>
-              <img className='logo' width={200} src={node.frontmatter.logo} />
+              <Image className='logo' width={200} src={node.frontmatter.logo} alt={node.frontmatter.title + ' logo'} />
             </div>
             <h3 className='company'>{node.frontmatter.title}</h3>
             <div className='job-title'>{node.frontmatter.role}</div>

@@ -8,7 +8,11 @@ const SidebarListItem = (node: any) => (
   <li className={node.href ? 'link' : 'nolink'} title={node.note}>
     <FontAwesomeIcon icon={node.faIcon} />
     {node.href ? (
-      <a href={node.href} target={node.href.startsWith('http') ? '_blank' : '_self'}>
+      <a
+        href={node.href}
+        target={node.href.startsWith('http') ? '_blank' : '_self'}
+        rel='noreferrer'
+      >
         {node.label}
       </a>
     ) : (

@@ -1,4 +1,5 @@
 import { LoadedContent } from '@/utils/loadPageContent';
+import Image from 'next/image';
 
 export function ProfilePhoto(data: LoadedContent) {
   return (
@@ -7,7 +8,7 @@ export function ProfilePhoto(data: LoadedContent) {
       style={{ position: 'relative', overflow: 'hidden' }}
     >
       <div aria-hidden='true' style={{ width: '100%', paddingBottom: '173.82812499999997%' }}></div>
-      <img
+      <Image
         aria-hidden='true'
         src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wEEEAAJAAsACwANABEADQASABQAFAASABgAGgAYABoAGAAkACEAHgAeACEAJAA2ACcAKQAnACkAJwA2AFEAMwA7ADMAMwA7ADMAUQBHAFYARwBCAEcAVgBHAIAAZQBZAFkAZQCAAJQAfAB2AHwAlACzAKAAoACzAOEA1QDhASUBJQGKEQAJAAsACwANABEADQASABQAFAASABgAGgAYABoAGAAkACEAHgAeACEAJAA2ACcAKQAnACkAJwA2AFEAMwA7ADMAMwA7ADMAUQBHAFYARwBCAEcAVgBHAIAAZQBZAFkAZQCAAJQAfAB2AHwAlACzAKAAoACzAOEA1QDhASUBJQGK/8IAEQgAFwANAwEiAAIRAQMRAf/EABgAAAIDAAAAAAAAAAAAAAAAAAAHAgUG/9oACAEBAAAAAGbZ5ialP//EABUBAQEAAAAAAAAAAAAAAAAAAAIE/9oACAECEAAAADR//8QAFAEBAAAAAAAAAAAAAAAAAAAAA//aAAgBAxAAAABQ/8QAIxAAAgEDAwQDAAAAAAAAAAAAAQIDBAURABJRITFSgRNBcf/aAAgBAQABPwC+XKsheNKcQAlSxaXOMA4wAPvVouLVVBFK6bGO4MvcBlOD66dNXu5U0lVHBA6maPcW8VA5POrTfqBKb4pJAhjJAJBw48hjnUTCQFmGSWIJ/e+p6oRELtz7xr//xAAXEQADAQAAAAAAAAAAAAAAAAABEBJR/9oACAECAQE/ABVHF//EABkRAAIDAQAAAAAAAAAAAAAAAAECEBETQf/aAAgBAwEBPwAhc1Pbj//Z'
         alt=''
@@ -30,8 +31,9 @@ https://www.datocms-assets.com/29155/1591230938-1591222991-profile-picture-profe
 https://www.datocms-assets.com/29155/1591230938-1591222991-profile-picture-professional-a-portrait-edited.png?auto=compress%2Cformat&amp;dpr=1&amp;fm=jpg&amp;w=256 256w'
           sizes='(max-width: 256px) 100vw, 256px'
         />
-        <img
+        <Image
           sizes='(max-width: 256px) 100vw, 256px'
+          // @ts-ignore
           srcSet='https://www.datocms-assets.com/29155/1591230938-1591222991-profile-picture-professional-a-portrait-edited.png?auto=compress%2Cformat&amp;dpr=0.25&amp;fm=jpg&amp;w=256 64w,
 https://www.datocms-assets.com/29155/1591230938-1591222991-profile-picture-professional-a-portrait-edited.png?auto=compress%2Cformat&amp;dpr=0.5&amp;fm=jpg&amp;w=256 128w,
 https://www.datocms-assets.com/29155/1591230938-1591222991-profile-picture-professional-a-portrait-edited.png?auto=compress%2Cformat&amp;dpr=1&amp;fm=jpg&amp;w=256 256w'
