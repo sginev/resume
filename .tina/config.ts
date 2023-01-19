@@ -96,34 +96,29 @@ export default defineConfig({
             type: 'object',
             name: 'links',
             label: 'Links',
-            templates: [
+            fields: [
               {
-                fields: [
-                  {
-                    type: 'string',
-                    name: 'id',
-                    label: 'ID',
-                  },
-                  {
-                    type: 'string',
-                    name: 'label',
-                    label: 'Label',
-                  },
-                  {
-                    type: 'string',
-                    name: 'linkType',
-                    label: 'Link Type',
-                  },
-                  {
-                    type: 'string',
-                    name: 'url',
-                    label: 'URL',
-                  },
-                ],
-                label: 'Link',
-                name: 'link',
+                type: 'string',
+                name: 'id',
+                label: 'ID',
+              },
+              {
+                type: 'string',
+                name: 'label',
+                label: 'Label',
+              },
+              {
+                type: 'string',
+                name: 'linkType',
+                label: 'Link Type',
+              },
+              {
+                type: 'string',
+                name: 'url',
+                label: 'URL',
               },
             ],
+            list: true,
           },
           {
             type: 'string',
